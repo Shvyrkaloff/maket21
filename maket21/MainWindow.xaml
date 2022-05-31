@@ -1,0 +1,73 @@
+﻿<Window x:Class="maket21.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:maket21"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="grid1" Background="#eee">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="343*"/>
+            <RowDefinition Height="37*"/>
+        </Grid.RowDefinitions>
+        <Border x:Name="border1"  BorderBrush="Black" BorderThickness="2" Margin="10,10,10,5" VerticalAlignment="Center">
+            <StackPanel  Grid.Row="0">
+                <Grid x:Name="tool" Background="White" HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="b1" Content="Услуги" Grid.Column="0" Background="White" Click="Button_Click" MouseEnter="hover1"></Button>
+                    <Button x:Name="b2" Content="О компании" Grid.Column="1" Background="White" Click="Button_Click" MouseEnter="hover2"></Button>
+                    <Button x:Name="b3" Content="Наши работы" Grid.Column="2" Background="White" Click="Button_Click_1" MouseEnter="hover3"></Button>
+                    <Button x:Name="b4" Content="Как нас найти" Grid.Column="3" Background="White" Click="Button_Click_2" MouseEnter="hover4"></Button>
+                    <RadioButton x:Name="b5" Content="Светлая тема" Grid.Column="4" HorizontalAlignment="Center" Checked="RadioButton_Checked" MouseEnter="hover5" />
+                    <RadioButton x:Name="b6" Content="Темная тема" Grid.Column="5" HorizontalAlignment="Center" Checked="RadioButton_Checked_1" MouseEnter="hover6" />
+                </Grid>
+            </StackPanel>
+        </Border>
+        <Border x:Name="border2" Grid.Row="1"  BorderBrush="Black" BorderThickness="2" Margin="10,10,10,5">
+            <Grid x:Name="grid3" Background="White" HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="75*"/>
+                </Grid.ColumnDefinitions>
+                <Border x:Name="border5"  BorderBrush="Black" BorderThickness="2" Margin="10,10,10,5">
+                    <StackPanel Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid x:Name="grid2" Background="White" Margin="0" Height="306">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="38*"/>
+                                <RowDefinition Height="38*"/>
+                                <RowDefinition Height="38*"/>
+                                <RowDefinition Height="39*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Image  Grid.Row="0" Source="https://sun9-east.userapi.com/sun9-32/s/v1/ig2/awlBE8k25ZJuod7G0HJ1_IMvnw9f3rt08JpOsHBSu0UnXr5q3HIpUCwA4ukE68vmPMNpiW_jxlSuggKYKbiXDyrX.jpg?size=2560x1707&amp;quality=95&amp;type=album" VerticalAlignment="Stretch" Stretch="Fill" HorizontalAlignment="Stretch" StretchDirection="Both" Margin="25,5,10,5"/>
+                            <Image  Grid.Row="1" Source="https://sun9-east.userapi.com/sun9-57/s/v1/if1/OmX5dGFfJpCsxl45wR79rat1elbZSuwqqCFCxpTiK4GkBnmwmMu8PlugmfbUQJQLfSmBCR9S.jpg?size=2560x1707&amp;quality=96&amp;type=album" VerticalAlignment="Stretch" Stretch="Fill" HorizontalAlignment="Stretch" StretchDirection="Both" Margin="25,5,10,5"/>
+                            <Image  Grid.Row="2" Source="https://sun9-north.userapi.com/sun9-78/s/v1/if2/EunXXb88CsJAGjbRkT7AOy1PBLndnyJ251f-LsuSnk5pV6Ro6AK8ZymgRpyYJvxOJj1QJEiY8IBkLuROh81dDrD9.jpg?size=2560x1707&amp;quality=96&amp;type=album" VerticalAlignment="Stretch" Stretch="Fill" HorizontalAlignment="Stretch" StretchDirection="Both" Margin="25,5,10,5"/>
+                            <Image  Grid.Row="3" Source="https://sun9-east.userapi.com/sun9-23/s/v1/if1/cJOp9_mrx4kg1L79PoLLvs5FfFAOn_k-hNqsR64gU1JOc7wLbCjKcJziP5DTt_uCsvD-o_is.jpg?size=2560x1707&amp;quality=96&amp;type=album" VerticalAlignment="Stretch" Stretch="Fill" HorizontalAlignment="Stretch" StretchDirection="Both" Margin="25,5,10,5"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+                <Border x:Name="border3" Grid.Column="1" BorderBrush="Black" BorderThickness="2" Margin="10,10,10,5">
+                    <TextBlock x:Name="text1" TextWrapping="Wrap" Text="Салон красоты «Rich» открыл двери для посетителей в июле 2011 года. С первого дня нашими базовыми принципами работы стали доброжелательность, чуткое отношение к каждому клиенту и высокий уровень профессионализма во всех сферах оказываемых услуг.  С первых секунд пребывания в салоне вы окунетесь в атмосферу заботы и доброжелательности. Почувствуйте себя свободными от повседневной суеты, открыв новые ощущения и удовольствие от виртуозного мастерства наших специалистов!  Наши мастера создадут настоящий шедевр, будь то простая или самая модная стрижка, свадебная или вечерняя укладка — все это и другое будет выглядеть не только безупречно, но и естественно! Чтобы добиться яркого цвета и красивой прически, мы уделяем огромное внимание здоровью волос, проводя лечение кожи головы и восстановительные процедуры по уникальным методикам.  Довершить образ и нанести последние штрихи помогут мастера по уходу за кожей рук и ступней. У нас можно сделать не только классический и европейский маникюр и педикюр (в том числе и аппаратный), но и спа-маникюр, который предлагается и для мужчин."/>
+                </Border>
+            </Grid>
+        </Border>
+        <Border x:Name="border4" Grid.Row="2"  BorderBrush="Black" BorderThickness="2" Margin="10,10,10,5">
+            <StackPanel Grid.Row="2">
+                <StatusBar x:Name="status" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <TextBlock x:Name= "Change"/>
+                </StatusBar>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
